@@ -28,6 +28,10 @@ composer require mjohann/data-manager
 ## 🧪 Usage Example
 
 ```php
+<?php
+
+require_once "vendor/autoload.php";
+
 use MJohann\Packlib\DataManager;
 
 DataManager::folderCreate("my_dir");
@@ -38,7 +42,7 @@ echo DataManager::fileRead("my_dir/file.txt"), PHP_EOL;
 
 echo DataManager::size("my_dir/"), PHP_EOL;
 
-var_export(DataManager::folderScan($fileSplit));
+var_export(DataManager::folderScan("my_dir/"));
 ```
 
 For more examples, see the [`example/script.php`](example/script.php) file in the repository.
