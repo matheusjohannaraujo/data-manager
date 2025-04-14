@@ -1,6 +1,6 @@
 {
     "name": "mjohann/data-manager",
-    "description": "A biblioteca DataManager foi construída em PHP para manipular arquivos e pastas de maneira simples e rápida.",
+    "description": "DataManager is a PHP library developed to simplify file and directory manipulation, offering an intuitive class for common filesystem operations.",
     "type": "library",
     "license": "MIT",
     "authors": [

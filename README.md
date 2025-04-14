@@ -1,30 +1,31 @@
+
 # DataManager
 
-**DataManager** é uma biblioteca PHP desenvolvida para simplificar a manipulação de arquivos e diretórios, oferecendo uma interface intuitiva para operações comuns no sistema de arquivos.
+**DataManager** is a PHP library developed to simplify file and directory manipulation, offering an intuitive class for common filesystem operations.
 
-## 📦 Instalação
+## 📦 Installation
 
-Você pode instalar a biblioteca via Composer:
+You can install the library via Composer:
 
 ```bash
 composer require mjohann/data-manager
 ```
 
-## ⚙️ Requisitos
+## ⚙️ Requirements
 
-- PHP 7.0 ou superior
+- PHP 7.0 or higher
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- Criação, leitura, atualização e exclusão de arquivos
-- Criação e exclusão de diretórios
-- Listagem de arquivos e diretórios
-- Verificação de existência de arquivos ou diretórios
-- Leitura e escrita de conteúdo em arquivos
-- Renomear arquivos e diretórios
-- Obtenção de informações detalhadas sobre arquivos
+- Create, read, update, and delete files  
+- Create and delete directories  
+- List files and directories  
+- Check for the existence of files or directories  
+- Read and write content to files  
+- Rename files and directories  
+- Get detailed information about files
 
-## 🧪 Exemplo de Uso
+## 🧪 Usage Example
 
 ```php
 use MJohann\Packlib\DataManager;
@@ -33,15 +34,16 @@ DataManager::folderCreate("my_dir");
 
 DataManager::fileCreate("my_dir/file.txt", "Test DataManager");
 
-echo DataManager::fileRead("my_dir/file.txt");
+echo DataManager::fileRead("my_dir/file.txt"), PHP_EOL;
 
-echo DataManager::size("my_dir/");
+echo DataManager::size("my_dir/"), PHP_EOL;
 
+var_export(DataManager::folderScan($fileSplit));
 ```
 
-Para mais exemplos, consulte o arquivo [`example/script.php`](example/script.php) no repositório.
+For more examples, see the [`example/script.php`](example/script.php) file in the repository.
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 data-manager/
@@ -49,14 +51,16 @@ data-manager/
 │   └── DataManager.php
 ├── example/
 │   └── script.php
+├── composer.json
+├── .gitignore
 ├── LICENSE
 └── README.md
 ```
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
-Desenvolvido por [Matheus Johann Araújo](https://github.com/matheusjohannaraujo) - Pernambuco, Brasil.
+Developed by [Matheus Johann Araújo](https://github.com/matheusjohannaraujo) – Pernambuco, Brazil.
