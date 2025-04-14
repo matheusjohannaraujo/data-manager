@@ -8,7 +8,7 @@
 	Date: 2025-04-14
 */
 
-namespace Lib;
+namespace MJohann\Packlib;
 
 error_reporting(E_ALL ^ E_WARNING);
 

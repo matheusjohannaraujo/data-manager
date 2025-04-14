@@ -1,0 +1,20 @@
+{
+    "name": "mjohann/data-manager",
+    "description": "A biblioteca DataManager foi construída em PHP para manipular arquivos e pastas de maneira simples e rápida.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "M. Johann",
+            "email": "matheusjohannaraujo+mjohannpacklib@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MJohann\\Packlib\\": "src/"
+        }
+    }
+}

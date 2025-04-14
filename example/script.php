@@ -1,13 +1,5 @@
 <?php
 
-/*
-	GitHub: https://github.com/matheusjohannaraujo/data-manager
-	Country: Brasil
-	State: Pernambuco
-	Developer: Matheus Johann Araujo
-	Date: 2025-04-14
-*/
-
 // Altera o "php.ini" em memória durante a execução
 ini_set("set_time_limit", 0);
 ini_set("max_execution_time", 0);
@@ -20,11 +12,11 @@ ini_set("post_max_size", "6144M");
 ini_set("upload_max_filesize", "6144M");
 ini_set("max_file_uploads", 200);
 
-// Solicitando a inclusão da biblioteca DataManager
-require_once "DataManager.php";
+// Inclusão da biblioteca DataManager
+require_once "../vendor/autoload.php";
 
 // Incluindo Namespace
-use Lib\DataManager;
+use MJohann\Packlib\DataManager;
 
 // 1/4 - Um quarto de segundo
 $time = 1000000 * 0.25;
