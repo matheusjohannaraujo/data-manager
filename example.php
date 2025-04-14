@@ -1,11 +1,11 @@
 <?php
 
 /*
-	GitHub: https://github.com/matheusjohannaraujo/data_manager
+	GitHub: https://github.com/matheusjohannaraujo/data-manager
 	Country: Brasil
 	State: Pernambuco
 	Developer: Matheus Johann Araujo
-	Date: 2022-04-06
+	Date: 2025-04-14
 */
 
 // Altera o "php.ini" em memória durante a execução
@@ -52,7 +52,7 @@ usleep($time);
 
 echo "Abrindo o arquivo de nome 'example_file_b.txt' e adicionando conteúdo nas linhas seguintes.<br>";
 $result = true;
-for ($i = 0; $i < 10000; $i++) { 
+for ($i = 0; $i < 10000; $i++) {
 	$result = $result && DataManager::fileAppend("example_file_b.txt", "Linha: $i, Test DataManager\r\n", false);
 }
 var_export($result);
@@ -151,8 +151,8 @@ usleep($time);
 
 echo "Cria um arquivo Zip de nome 'example_zip_file.zip'.<br>";
 var_export(DataManager::zipCreate("example_zip_file.zip", [
-    "example_dir/",
-    ["DEVELOPER.txt", "Matheus Johann Araújo"]
+	"example_dir/",
+	["DEVELOPER.txt", "Matheus Johann Araújo"]
 ]));
 echo "<hr>";
 

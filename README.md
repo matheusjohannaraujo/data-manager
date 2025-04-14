@@ -1,12 +1,12 @@
 
-# [DataManager](https://github.com/matheusjohannaraujo/data_manager)
+# [DataManager](https://github.com/matheusjohannaraujo/data-manager)
 
 ```php
 const DEVELOPER_INFO = [
     "autor" => "Matheus Johann Araújo",
     "country" => "Brasil",
     "state" => "Pernambuco",
-    "date" => "2022-04-06"
+    "date" => "2025-04-14"
 ];
 ```
 
