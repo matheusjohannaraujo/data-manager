@@ -5,7 +5,7 @@
 
 ## 📦 Installation
 
-You can install the library via Composer:
+You can install the library via [Packagist/Composer](https://packagist.org/packages/mjohann/data-manager):
 
 ```bash
 composer require mjohann/data-manager
@@ -29,19 +29,23 @@ composer require mjohann/data-manager
 
 ```php
 <?php
-
 require_once "vendor/autoload.php";
 
 use MJohann\Packlib\DataManager;
 
+// Create a new folder named "my_dir"
 DataManager::folderCreate("my_dir");
 
+// Create a new file "file.txt" inside "my_dir" and write "Test DataManager" to it
 DataManager::fileCreate("my_dir/file.txt", "Test DataManager");
 
+// Read the contents of "my_dir/file.txt" and print it
 echo DataManager::fileRead("my_dir/file.txt"), PHP_EOL;
 
+// Get and print the size of the "my_dir" folder
 echo DataManager::size("my_dir/"), PHP_EOL;
 
+// Scan the "my_dir" folder and print its contents as an array
 var_export(DataManager::folderScan("my_dir/"));
 ```
 
